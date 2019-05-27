@@ -10,6 +10,7 @@
 
         <link href="/public/css/bootstrap.min.css" rel="stylesheet">
         <script src="/public/js/bootstrap.min.js"></script>
+        <script src="/public/js/validation.js"></script>
 
     </head>
     <body>
@@ -20,7 +21,7 @@
             <div class="well col-md-6">
                 <h2 style="text-align: center">Укажите параметры</h2>
                 <div class="form-group">
-                    <form style="text-align: center" id="create_image" action="/" method="get">
+                    <form style="text-align: center" name="frm" id="create_image" action="/" method="get" onsubmit="return f_submit();">
                         <br>
                         <input type="number" name="width" value="" min="0" class="form-control" placeholder="Image width" required >
                         <br>
@@ -37,9 +38,11 @@
                             <option >50</option>
                         </select>
                         <br>
-                        <button type="submit"  class="btn btn-success" name="create_image">Сгенерировать изображение</button>
+                        <button type="submit"  class="btn btn-success">Сгенерировать изображение</button>
                     </form>
                 </div>
             </div>
     </body>
+    
+    
 </html>
