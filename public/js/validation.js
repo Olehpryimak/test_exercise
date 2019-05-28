@@ -17,19 +17,20 @@ function f_submit() {
         window.alert("Please enter correct radius!");
         return false;
     }
-    if (radius>(width/2)) {
+    if (radius > (width / 2)) {
         window.alert("Please enter radius less then half width!");
         return false;
     }
-    if (radius>(height/2)) {
+    if (radius > (height / 2)) {
+
         window.alert("Please enter radius less then half height!");
         return false;
     }
-    
+
 }
 
 function isNumber(str) {
-    if (isNaN(str)) 
+    if (isNaN(str))
         return false;
     return true;
 }
