@@ -21,7 +21,7 @@
             <div class="well col-md-6">
                 <h2 style="text-align: center">Укажите параметры</h2>
                 <div class="form-group">
-                    <form style="text-align: center" name="frm" id="create_image" action="/" method="get" onsubmit="return f_submit();">
+                    <form style="text-align: center" name="frm" id="create_image" action="image.php" method="get" onsubmit="return f_submit();">
                         <br>
                         <input type="number" name="width" value="" min="0" class="form-control" placeholder="Image width" required >
                         <br>
@@ -43,6 +43,6 @@
                 </div>
             </div>
     </body>
-    
-    
+
+
 </html>
